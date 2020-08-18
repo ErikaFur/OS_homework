@@ -1,0 +1,20 @@
+  104  ls
+  105  mv pac pac.deb
+  106  ls
+  107  apt install ./pac.deb 
+  108  sudo apt install ./pac.deb 
+  109  zoom
+  110  cd ~/Innopolis/week1
+  111  cat
+  112  touch 
+  113  touch ex1.txt
+  114  ls /usr/bin
+  115  ls /usr/bin | grep gcc
+  116  ls /usr/bin | grep gcc | sort
+  117  ls /usr/bin | grep gcc | sort -r
+  118  ls /usr/bin | grep gcc | sort -r > ex1.txt
+  119* cat ex1.txt 
+  120  touch ex2.txt
+  121  history
+  122  history | tail -n 20
+  123  history | tail -n 20 > ex2.txt
