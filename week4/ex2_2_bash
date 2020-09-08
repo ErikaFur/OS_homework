@@ -1,0 +1,3 @@
+#!/bin/bash
+./ex2_2 &
+pstree | grep ex2
