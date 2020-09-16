@@ -1,23 +1,24 @@
+0
 1
 1
 2
-1
-2
-2
 2
 3
 3
-2
-3
-3
-4
-3
-4
-4
 4
 4
 5
 5
+6
+6
+7
+7
+8
+8
+9
+9
+10
+10
 
-in 1 and 2 lines two programms write "1". It caused because of race condition. Also in 4'th line was printed "1". It may
-by caused because of second interation's ex2.sh started before first ex2.sh ended his output in file.
+Race condition is occur first when first two programms start. They both read "0" and both of them write result last_num+1.
+Because of that each letter was written twice.
