@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define n 14
+#define n 5
 
 struct process
 {
