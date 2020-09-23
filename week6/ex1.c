@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define n 5
 
 struct process
 {
@@ -15,8 +16,6 @@ double average_waiting_time = 0;
 struct process processes[n];
 
 int main(void) {
-	int n;
-	scanf_s("%d", &n);
 	int time = 0;
 	printf("Input %d procecces in format 'number number' for each process\n", n);
 	for (int i = 0; i < n; i++) {
