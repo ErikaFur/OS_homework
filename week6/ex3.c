@@ -42,16 +42,15 @@ int main(void) {
 		{
 			if (done[i] == 1) continue;
 			if (processes[i].burst_time <= quantum * turn) {
-				processes[i].waiting_time += time - processes[i].arrival_time;
+				processes[i].waiting_time = time - processes[i].arrival_time - (turn-1)*quantum;
 				time += quantum;
-				processes[i].completion_time = time - quantum + processes[i].burst_time;
-				processes[i].turn_around_time = processes[i].burst_time + processes[i].waiting_time;
+				processes[i].completion_time = time - quantum * turn + processes[i].burst_time;
+				processes[i].turn_around_time = processes[i].completion_time - processes[i].arrival_time;
 				counter++;
 				done[i] = 1;
 				printf("for process %d completion time is %d, turn around time is %d, waiting time is %d\n", processes[i].site, processes[i].completion_time, processes[i].turn_around_time, processes[i].waiting_time);
 			}
 			else {
-				processes[i].waiting_time += time - processes[i].arrival_time;
 				time += quantum;
 			}
 		}
