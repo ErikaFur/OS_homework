@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+   2519	    664	      8	   3191	    c77	/home/senfur/Innopolis/os_homework/week5/ex1
