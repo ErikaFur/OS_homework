@@ -1,0 +1,39 @@
+for input:
+0 1
+0 2
+0 1
+4 3
+5 2
+
+in FCFS output will be:
+for process 0 completion time is 1, turn around time is 1, waiting time is 0
+for process 1 completion time is 3, turn around time is 3, waiting time is 1
+for process 2 completion time is 4, turn around time is 4, waiting time is 3
+for process 3 completion time is 7, turn around time is 3, waiting time is 0
+for process 4 completion time is 9, turn around time is 4, waiting time is 2
+time of compliting all programms = 9
+average turnaround time = 3.000000
+average waiting time = 1.200000
+in shortest job firstoutput will be:
+for process 0 completion time is 1, turn around time is 1, waiting time is 0
+for process 2 completion time is 2, turn around time is 2, waiting time is 1
+for process 1 completion time is 4, turn around time is 4, waiting time is 2
+for process 3 completion time is 7, turn around time is 3, waiting time is 0
+for process 4 completion time is 9, turn around time is 4, waiting time is 2
+time of compliting all programms = 9
+average turnaround time = 2.800000
+average waiting time = 1.000000
+in round robin output will be:
+for process 0 completion time is 1, turn around time is 1, waiting time is 0
+for process 2 completion time is 3, turn around time is 3, waiting time is 2
+for process 1 completion time is 6, turn around time is 6, waiting time is 4
+for process 4 completion time is 8, turn around time is 3, waiting time is 1
+for process 3 completion time is 9, turn around time is 5, waiting time is 2
+time of compliting all programms = 9
+average turnaround time = 3.600000
+average waiting time = 1.800000
+
+In this case:
+First algorithm has not bad results, but also first algorithm is not about pseudo-parallelism.
+Second is better then 1, but it will be bad in case when all programs have different time of arriving because of sorting.
+Last one has worst resales, but this algorithm is can be implemented for parallelism
