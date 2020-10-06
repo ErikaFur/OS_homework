@@ -1,0 +1,3 @@
+Virtual memory is some number of pages, which located on the disk. VM is needed to upload big programms, which often larger
+then size of PM. We execute part of program, and then export other part for execution on the place of previous.
+VM often larger then PM. Otherwise VM is not needed.
