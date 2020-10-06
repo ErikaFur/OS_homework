@@ -1,0 +1,6 @@
+8 kb = 2**13 b
+so if virtual adress we need 13 bits for the offset.
+16-13 = 3-bit - for navigation between pages.
+so we might have 2**3 = 8 pages.
+So, we needed only 8 entries in our PT (on each page 1 entry).
+Answer: 8 entries
