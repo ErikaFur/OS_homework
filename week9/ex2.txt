@@ -1,0 +1,15 @@
+for n = 10
+
+with sequence: 3 1 1 1 1 1 1 1 1 1 1 1 2 5 6
+output is:
+miss ratio 0.333333
+hit ratio 0.666667
+it is because we have 15 entities and 5 of them are unique
+minimal possible miss ratio is (count of unique entities)/all ticks
+
+with sequence: 1 2 3 4 5 6 7 8 9
+output is:
+miss ratio 1.000000
+hit ratio 0.000000
+it is because we have all are unique, so we have max miss ratio
+
