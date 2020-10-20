@@ -1,0 +1,4 @@
+file file1 has inode 790672 and number of links = 2
+file link1 has inode 790672 and number of links = 2
+file . has inode 790671 and number of links = 2
+file .. has inode 662439 and number of links = 3

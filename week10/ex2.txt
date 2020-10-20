@@ -1,0 +1,2 @@
+/home/senfur/Innopolis/os_homework/week10/_ex2.txt
+/home/senfur/Innopolis/os_homework/week1/file.txt

@@ -1,0 +1,9 @@
+-rw-rw-rw- 1 senfur senfur 0 окт 20 13:55 _ex3.txt
+-rwxrw-rwx 1 senfur senfur 0 окт 20 13:55 _ex3.txt
+-rwxrwxrwx 1 senfur senfur 0 окт 20 13:55 _ex3.txt
+
+660 - (6 is 110 in binary) it means User has access to r and w, but has not access to x (because of 0 bit in according position)
+The same with Group access. And Other have not any permitions at all.
+775 - (7 is 111 in binary, 5 is 101 in binary) in this case, User and Group have all permitions. But Other have only
+r and x permition.
+777 - anyone have permition for r, w and x.
