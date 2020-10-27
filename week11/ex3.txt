@@ -1,0 +1,11 @@
+In first program output will be:
+Hello
+Hello
+
+In second program output will be:
+Hello
+
+
+
+It is because of in second program, we print buffer and clear it before fork()
+In first program fork copy content of the buffer and after that print in both processes.
