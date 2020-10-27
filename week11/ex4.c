@@ -9,7 +9,6 @@
 int main() {
     int z = open("/home/senfur/Innopolis/os_homework/week11/ex1.txt", O_RDWR);
     int z1 = open("/home/senfur/Innopolis/os_homework/week11/ex1.memcpy.txt", O_RDWR);
-    FILE *fp;
     struct stat* buff = malloc (sizeof(struct stat));
     struct stat* buff1 = malloc (sizeof(struct stat));
     stat("/home/senfur/Innopolis/os_homework/week11/ex1.txt", buff);
@@ -19,6 +18,6 @@ int main() {
     void* map = mmap(NULL, x, PROT_READ, MAP_SHARED, z, 0);
     void* map1 = mmap(NULL, x1, PROT_WRITE, MAP_SHARED, z1, 0);
     truncate("/home/senfur/Innopolis/os_homework/week11/ex1.memcpy.txt", sizeof(char) * x);
-    strcpy(map1, map);
+    memcpy(map1, map, x);
     return 0;
 }
