@@ -1,0 +1,35 @@
+without O_SYNC:
+for buffer_size = 32
+real    0m0,049s
+user    0m0,004s
+sys     0m0,045s
+
+for buffer_size = 1024
+real    0m0,008s
+user    0m0,000s
+sys     0m0,008s
+
+for buffer_size = 1024*8
+real    0m0,003s
+user    0m0,000s
+sys     0m0,004s
+
+
+with O_SYNC:
+for buffer size = 32 (I'm still waiting for result)
+real    0m23,622s
+user    0m0,053s
+sys     0m1,218s
+
+for buffer_size = 1024
+real    0m0,767s
+user    0m0,005s
+sys     0m0,044s
+
+for buffer_size = 1024*8
+real    0m0,100s
+user    0m0,003s
+sys     0m0,007s
+
+with O_SYNC time is worse
+
